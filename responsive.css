@@ -1,0 +1,85 @@
+@media (max-width: 850px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        height: 15%;
+    }
+
+    .nav {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .topo {
+        height: 45%;
+        padding: 15px 35px;
+        display: block;
+    }
+
+    .topo h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .topo p {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .servico {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 45%;
+        margin: 25px auto;
+        padding: 0;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cta section h2 {
+        font-size: 19px;
+    }
+
+    .localizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    iframe {
+        width: 85%;
+        height: 300px;
+    }
+
+    footer {
+        align-items: center;
+        font-size: 11px;
+        padding: 15px;
+    }
+
+    .status-agendamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+    }
+
+    .status-agendamento p {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+    }
+}

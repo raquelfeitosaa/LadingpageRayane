@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root {
+    --cor-primaria: #c94472;
+    --cor-secundaria: #fde2e4;
+    --cor-fundo: #f5f5f5;
+    --cor-texto: black;
+    --fonte-principal: "Bodoni Moda SC", serif;
+}
+
+body {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 99;
+    background-color: var(--cor-primaria);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 35px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 25px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-weight: 550;
+}
+
+.nav a:hover {
+    background-color: rgb(238, 130, 238, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 5%;
+    background-color: var(--cor-fundo);
+    z-index: 99;
+}
+
+.topo-um {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-um h1 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 66px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.topo-um p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.btn-agendar:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-topo {
+    width: 100%;
+    padding: 10% 5%;
+
+}
+
+.img-topo img {
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: #c94472 0px 0px 25px;
+}
+
+.text-servicos {
+    margin-top: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Kedebideri", sans-serif;
+}
+
+.text-espe {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+}
+
+.servico {
+    margin: 35px auto;
+    padding: 0 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.servico ul {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grids-servico {
+    position: relative;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 15px;
+
+}
+
+.grids-servico img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.grids-servico:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.grids-servico h3 {
+    padding: 20px 20px 10px;
+}
+
+.grids-servico p {
+    padding-bottom: 20px;
+    color: #6c757d;
+    font-size: 17px;
+}
+
+.Agendamento {
+    background-color: #eeeeee;
+    height: auto;
+    padding: 50px 0;
+}
+
+.grid-agendamento {
+    padding: 50px 20px;
+}
+
+.grid-agendamento h2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.button,
+.btn-agendar {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.button:hover,
+.btn-agendar:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:focus,
+.btn-agendar:focus {
+    transform: scale(1.05);
+    background-color: var(--cor-primaria);
+    transition: all 0.2s ease-in-out;
+}
+
+.grid-horarios h2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-confirmar {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--cor-primaria);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-confirmar:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    padding: 50px 5%;
+    background: var(--cor-primaria);
+    height: 15rem;
+    width: 100%;
+}
+
+.Mais-informações {
+    padding-top: 25px;
+}
+
+.Mais-informações h2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.Mais-informações p {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.Mais-informações p a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 5px;
+}
+
+.Mais-informações p a:hover {
+    background-color: rgb(238, 130, 238, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+footer {
+    padding: 25px 0;
+    color: #928787;
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*Z index negativo é para que fique atrás de tudo*/
+    opacity: 0.5;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 10% 20%, var(--cor-primaria) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--cor-primaria) 0%, transparent 20%),
+        var(--cor-fundo);
+}
+
+.flatpickr-calendar {
+    background: #f3ccde;
+    color: black;
+    border-radius: 12px;
+    padding: 35px;
+    width: 30%;
+    outline: none;
+}
+
+.flatpickr-day {
+    color: black;
+}
+
+.flatpickr-day.today {
+    background: #651b69;
+    color: black;
+    border-radius: 50%;
+}
+
+.flatpickr-day.today:hover {
+    background: #7e57c2;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.flatpickr-day:hover {
+    background: #b39ddb;
+    color: black;
+    border-radius: 50%;
+}
+
+.flatpickr-day.selected {
+    background: #651b55;
+    color: black;
+    border-radius: 50%;
+}
+
+.flatpickr-day.selected:hover {
+    background: #7e57c2;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.flatpickr-time {
+    border-radius: 15px;
+    outline: none;
+}
+
+.flatpickr-time:hover {
+    background: #b39ddb;
+}
+
+.flatpickr-time:focus {
+    background: #b39ddb;
+    outline: none;
+}
+
+.flatpickr-time input:hover {
+    background: #b39ddb;
+}
+
+.flatpickr-time input:focus {
+    background: #b39ddb;
+}
+
+.inputs {
+    background-color: var(--cor-secundaria);
+    color: black;
+    width: 50%;
+    padding: 10px 25px;
+    margin: 0 10%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.inputs:focus {
+    border: 2px solid var(--cor-primaria);
+    background: #fde2e4;
+}
+
+.grid-horarios h3 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.localizacao {
+    padding: 50px 5%;
+    background-color: #eeeeee;
+}
+
+.text-local {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.p-local {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.status-agendamento {
+    visibility: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-family: "Kedebideri", sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: #c94472be;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+}
+
+.filtro {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.432);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.campo-mensagem {
+    font-weight: 700;
+
+}
+
+.animation {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-35px);
+    transition: all 0.4s ease-in;
+}
+
+.ativo {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all 0.4s ease-in;
+
+}
+
+/* estado inicial dos itens da lista .logos */
+.logos li {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* estado final quando .logos recebe .ativo */
+.logos.ativo li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* delays escalonados */
+.logos.ativo li:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.logos.ativo li:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.logos.ativo li:nth-child(3) {
+    transition-delay: 0.8s;
+}
+
+.logos.ativo li:nth-child(4) {
+    transition-delay: 1.2s;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Agendamento Online </title>
+</head>
+
+<body>
+    <header class="header animation">
+        <ul class="nav">
+            <li>
+                <a href="#agendamento">Agendamento</a>
+            </li>
+            <li>
+                <a href="#Contato">Contato</a>
+            </li>
+            <li>
+                <a href="#localizacao">Localização</a>
+            </li>
+        </ul>
+    </header>
+    <section class="topo animation">
+        <div class="img-topo"><img src="imgs/fundo.png" alt="foto rayane"></div>
+        <div class="topo-um">
+            <h1>Rayane Nails</h1>
+            <p>Manicure, pedicure design. <br>
+                📍Vila Cachoeira / Sitio Bonito do Acampamento.
+            </p>
+            <a href="#agendamento"><button class="btn-agendar">Agendar</button></a>
+        </div>
+        <div class="particulas"></div>
+
+    </section>
+
+    <main class="animation">
+        <p class="text-servicos">Serviços mais procurados</p>
+        <h2 class="text-espe">ESPECIALIDADES</h2>
+        <section class="servico">
+            <ul class="logos animation">
+                <li class="grids-servico">
+                    <img src="imgs/molde f1.jpg" alt="mold F1">
+                    <h3>Molde F1</h3>
+                    <p>R$ 40,00</p>
+                </li>
+                <li class="grids-servico">
+                    <img src="imgs/postiças.jpg" alt="Unha postiça">
+                    <h3>Unha postiça </h3>
+                    <p>R$ 3,00</p>
+                </li>
+                <li class="grids-servico">
+                    <img src="imgs/pedicure.jpg" alt="Pedicure">
+                    <h3>Pedicure</h3>
+                    <p>R$ 2,00</p>
+                </li>
+
+                <li class="grids-servico">
+                    <img src="imgs/esmaltação simples.jpg" alt="Esmaltação simples">
+                    <h3>Esmaltação simples</h3>
+                    <p>R$ 12,00</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <section class="Agendamento animation" id="agendamento">
+        <div class="grid-agendamento">
+            <h2>Qual serviço procura?</h2>
+            <input type="button" value="Molde F1" class="button" id="button">
+            <input type="button" value="Unha Postiça" class="button">
+            <input type="button" value="Pedicure" class="button">
+            <input type="button" value="Remoção de cutícula" class="button">
+            <input type="button" value="Esmaltação simples" class="button">
+        </div>
+
+        <div class="grid-horarios">
+            <h2>Horários disponíveis</h2>
+            <div class="agenda-flatpickr">
+                <input type="text" id="dataHoraCustom" placeholder="Escolha data e hora" class="inputs">
+            </div>
+            <h3>Digite seu nome:</h3>
+            <input type="text" placeholder="Seu nome" id="nomeCliente" class="inputs">
+        </div>
+
+        <button class="btn-confirmar" onclick="fuiclicado()">Confirmar Agendamento</button>
+
+        <div class="status-agendamento">
+            <!-- Mensagem de status do agendamento será exibida aqui -->
+        </div>
+
+        <div class="filtro">
+            <!-- -- Filtro visual -- -->
+        </div>
+
+        <div class="campo-mensagem">
+            <!-- Mensagem de campo em branco -->
+        </div>
+    </section>
+    <div class="cta animation" id="Contato">
+        <section class="Mais-informações">
+            <h2>Horário</h2>
+            <p>Ter a Dom 07h às 19h</p>
+        </section>
+
+        <section class="Mais-informações">
+            <h2>Contato</h2>
+            <p><a href="https://wa.me/5584981356411" target="_blank">📲 (84) 98135 - 6411</a></p>
+        </section>
+
+        <section class="Mais-informações">
+            <h2>Rede Sociais</h2>
+            <p><a href="https://www.instagram.com/rayanenails_3/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/rayane.feitosa.9461" target="_blank">Facebook</a></p>
+        </section>
+    </div>
+
+    <section class="localizacao animation" id="localizacao">
+        <div>
+            <h2 class="text-local">Localização</h2>
+            <p class="p-local">📍Vila Cachoeira, N°19:</p>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1634.6356021203992!2d-38.482795040341166!3d-6.196354328997893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1768173109947!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer> 2026 © Rayane Nails | Todos os direitos reservados. </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
